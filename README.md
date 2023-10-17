@@ -1,7 +1,24 @@
-This is supposed to be a little tool that helps me with my studies this semester.
+# honbu
 
-It's gonna use spaced repetition algorithms to tell me which topic I should look at today.
+## Project setup
+```
+npm install
+```
 
-It's basically anki without the flashcard part.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-I'm using this as a way to try out electron and vue.
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
