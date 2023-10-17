@@ -6,7 +6,7 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'src/preload.js')
     }
   })
 
@@ -16,7 +16,8 @@ function createWindow () {
 app.whenReady().then(() => {
   createWindow()
 
-  mainWindow.webContents.reloadIgnoringCache()
+  console.log("main")
+//  mainWindow.webContents.reloadIgnoringCache()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow()
