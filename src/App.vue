@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="What am I doing?"/>
-  <Cou msg="What am I doing?"/>
+  <Cou msg="What am I doing?" mas="Get me out of here"/>
 </template>
 
 <script>
