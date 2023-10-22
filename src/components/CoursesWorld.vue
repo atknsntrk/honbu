@@ -1,4 +1,16 @@
+<script>
+import { ref } from 'vue'
 
+export default {
+    setup() {
+        const message = ref('')
+        
+        return {
+            message
+        }
+    }
+}
+</script>
 
 <template>
   <div class="hello">
@@ -7,19 +19,7 @@
  </div>
 </template>
 
-<script>
-import { ref } from 'vue'
 
-const message = ref('')
-
-export default {
-  name: 'CoursesWorld',
-  props: {
-    msg: String,
-    mas: String
-  }
-}
-</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {

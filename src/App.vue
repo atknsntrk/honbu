@@ -1,12 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="What am I doing?"/>
-  <Cou msg="What am I doing?" mas="Get me out of here"/>
+  <Cou />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Cou from './components/Courses.vue'
+import Cou from './components/CoursesWorld.vue'
 
 export default {
   name: 'App',
