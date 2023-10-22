@@ -1,11 +1,17 @@
+
+
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h3>{{mas}}</h3>
+    <h1>  eyooooooo {{ message }}</h1>
+      <input v-model="message" placeholder="course" />
  </div>
 </template>
 
 <script>
+import { ref } from 'vue'
+
+const message = ref('')
+
 export default {
   name: 'CoursesWorld',
   props: {
@@ -14,7 +20,6 @@ export default {
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
