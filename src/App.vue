@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="What am I doing?"/>
+  <HelloWorld msg="Hello"/>
   <Cou />
 </template>
 
@@ -15,6 +15,10 @@ export default {
     Cou
   }
 }
+
+const courses = [];
+
+
 </script>
 
 <style>
