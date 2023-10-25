@@ -4,9 +4,16 @@ import { ref } from 'vue'
 export default {
     setup() {
         const message = ref('')
-        
+
         return {
             message
+        }
+    },
+    methods: {
+        onSubmit() {
+            console.log(this.message)
+            this.$emit('new-course', this.message)
+            this.message = ''
         }
     }
 }
@@ -15,7 +22,10 @@ export default {
 <template>
   <div class="hello">
     <h1>  eyooooooo {{ message }}</h1>
-      <input v-model="message" placeholder="course" />
+    <form @submit.prevent="onSubmit">
+        <input v-model="message" placeholder="course" />
+        <input type="submit" value="Submit" />
+    </form>
  </div>
 </template>
 
