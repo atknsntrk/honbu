@@ -1,4 +1,8 @@
 # honbu
+this project is supposed to be an anki alternative just for topics. 
+You entere the topics you want to study and the software and the software tells you the best topic to study for today.
+it should use the same algorithm as anki.
+The technologies used are electron with vue
 
 ## Project setup
 ```
